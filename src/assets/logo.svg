@@ -12,6 +12,6 @@
     <rect x="147.422" y="52.8637" width="12" height="11.9844" transform="rotate(-15 147.422 52.8637)" fill="white"/>
     <rect x="124.24" y="59.0753" width="12" height="11.9844" transform="rotate(-15 124.24 59.0753)" fill="white"/>
     <rect x="101.057" y="65.287" width="12" height="11.9844" transform="rotate(-15 101.057 65.287)" fill="white"/>
-    <text x="5" y="35" font-size="20" font-family="montserrat" fill="white">Quitutes Mineiros</text>
+    <text x="1.5" y="35" font-size="20" font-family="montserrat" fill="white">Quitutes Mineiros</text>
   </g>
 </svg>
