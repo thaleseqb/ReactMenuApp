@@ -1,0 +1,17 @@
+<svg width="152" height="64" viewBox="0 0 152 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="152" height="64" rx="4" fill="#D73B3B"/>
+  <mask id="mask0_8_388" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="152" height="64">
+    <rect width="152" height="64" rx="4" fill="#D73B3B"/>
+  </mask>
+  <g mask="url(#mask0_8_388)">
+    <rect x="40" y="69.2401" width="182.522" height="72.8274" transform="rotate(-15 40 69.2401)" fill="#C53333"/>
+    <rect x="63.1822" y="63.0285" width="12" height="11.9844" transform="rotate(-15 63.1822 63.0285)" fill="white"/>
+    <rect x="86.3644" y="56.8168" width="12" height="11.9844" transform="rotate(-15 86.3644 56.8168)" fill="white"/>
+    <rect x="109.547" y="50.6052" width="12" height="11.9844" transform="rotate(-15 109.547 50.6052)" fill="white"/>
+    <rect x="132.729" y="44.3935" width="12" height="11.9844" transform="rotate(-15 132.729 44.3935)" fill="white"/>
+    <rect x="147.422" y="52.8637" width="12" height="11.9844" transform="rotate(-15 147.422 52.8637)" fill="white"/>
+    <rect x="124.24" y="59.0753" width="12" height="11.9844" transform="rotate(-15 124.24 59.0753)" fill="white"/>
+    <rect x="101.057" y="65.287" width="12" height="11.9844" transform="rotate(-15 101.057 65.287)" fill="white"/>
+    <text x="5" y="35" font-size="20" font-family="montserrat" fill="white">Quitutes Mineiros</text>
+  </g>
+</svg>
