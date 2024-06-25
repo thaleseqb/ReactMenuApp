@@ -7,6 +7,7 @@ import Filters from "./Filters";
 export default function Menu() {
 
     const [search, setSearch] = useState("");
+    const [filter, setFilter] = useState<number | null>(null);
 
     return (
         <>
@@ -30,7 +31,7 @@ export default function Menu() {
                 setSearch={setSearch} 
             />
             <div className={styles.smenu__filters}>
-                <Filters/>
+                <Filters filter={filter} setFilter={setFilter}/>
             </div>
         </section>
         </>
