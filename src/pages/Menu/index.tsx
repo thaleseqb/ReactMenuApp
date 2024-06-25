@@ -2,6 +2,7 @@ import styles from "./Menu.module.scss"
 import { ReactComponent as Logo} from "../../assets/logo.svg"
 import Searcher from "./Searcher"
 import { useState } from "react"
+import Filters from "./Filters";
 
 export default function Menu() {
 
@@ -28,6 +29,9 @@ export default function Menu() {
                 search={search} 
                 setSearch={setSearch} 
             />
+            <div className={styles.smenu__filters}>
+                <Filters/>
+            </div>
         </section>
         </>
     )
