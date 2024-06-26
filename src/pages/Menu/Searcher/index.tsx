@@ -3,7 +3,7 @@ import React from "react"
 import {CgSearch} from "react-icons/cg";
 
 interface Props {
-    search: string
+    search: string,
     setSearch: React.Dispatch<React.SetStateAction<string>>
 }
 
@@ -11,6 +11,7 @@ export default function Searcher({search, setSearch}: Props) {
     return (
         <div className={styles.searcher}>
             <input 
+                placeholder="O que você procura ?"
                 value={search}
                 onChange={event => setSearch(event.target.value)}
             />

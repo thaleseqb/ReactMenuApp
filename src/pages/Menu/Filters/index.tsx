@@ -4,8 +4,8 @@ import styles from "./Filters.module.scss"
 import classNames from "classnames";
 
 interface Option {
-    id:number;
-    label:string;
+    id:number,
+    label:string
 }
 
 interface FilterTypeProps {

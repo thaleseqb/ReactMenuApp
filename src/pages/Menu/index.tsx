@@ -3,11 +3,13 @@ import { ReactComponent as Logo} from "../../assets/logo.svg"
 import Searcher from "./Searcher"
 import { useState } from "react"
 import Filters from "./Filters";
+import Orderer from "./Orderer";
 
 export default function Menu() {
 
     const [search, setSearch] = useState("");
     const [filter, setFilter] = useState<number | null>(null);
+    const [orderer, setOrderer] = useState("");
 
     return (
         <>
@@ -32,6 +34,7 @@ export default function Menu() {
             />
             <div className={styles.smenu__filters}>
                 <Filters filter={filter} setFilter={setFilter}/>
+                <Orderer orderer={orderer} setOrderer={setOrderer} />
             </div>
         </section>
         </>
