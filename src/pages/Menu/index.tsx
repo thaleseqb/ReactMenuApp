@@ -37,7 +37,11 @@ export default function Menu() {
                 <Filters filter={filter} setFilter={setFilter}/>
                 <Orderer orderer={orderer} setOrderer={setOrderer} />
             </div>
-            <Itens/>
+            <Itens 
+                search={search} 
+                filter={filter} 
+                orderer={orderer} 
+            />
         </section>
         </>
     )
