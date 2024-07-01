@@ -1,5 +1,6 @@
 import menu from "data/menu.json";
 import styles from "./Begin.module.scss";
+import ComponentMenu from "components/ComponentMenu";
 
 export default function Begin() {
     
@@ -9,6 +10,7 @@ export default function Begin() {
 
     return (
         <section >
+            <ComponentMenu/>
             <h3 className={styles.title}>
                 Recomendações da cozinha
             </h3>

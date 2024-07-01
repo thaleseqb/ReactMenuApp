@@ -5,6 +5,7 @@ import { useState } from "react"
 import Filters from "./Filters";
 import Orderer from "./Orderer";
 import Itens from "./Itens";
+import ComponentMenu from "components/ComponentMenu";
 
 export default function Menu() {
 
@@ -15,9 +16,7 @@ export default function Menu() {
     return (
         <>
         <main>
-            <nav className={styles.menu}>
-            <Logo/>
-            </nav>
+            <ComponentMenu/>
             <header className={styles.header}>
                 <div className={styles.header__text}>
                     Comidinha caseira e mineira !
