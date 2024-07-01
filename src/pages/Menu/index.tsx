@@ -20,7 +20,7 @@ export default function Menu() {
             </nav>
             <header className={styles.header}>
                 <div className={styles.header__text}>
-                    A casa do código e da massa
+                    Comidinha caseira e mineira !
                 </div>
             </header>
         </main>
