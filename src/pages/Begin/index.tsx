@@ -10,7 +10,6 @@ export default function Begin() {
 
     return (
         <section >
-            <ComponentMenu/>
             <h3 className={styles.title}>
                 Recomendações da cozinha
             </h3>

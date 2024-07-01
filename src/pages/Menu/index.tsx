@@ -16,7 +16,6 @@ export default function Menu() {
     return (
         <>
         <main>
-            <ComponentMenu/>
             <header className={styles.header}>
                 <div className={styles.header__text}>
                     Comidinha caseira e mineira !
