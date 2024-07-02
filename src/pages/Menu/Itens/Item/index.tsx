@@ -1,5 +1,6 @@
 import Tags from "components/Tags";
 import styles from "./Item.module.scss"
+import { useNavigate } from "react-router-dom";
 
 interface Props {
     title: string;
@@ -27,8 +28,13 @@ export default function Item({
     id,
     category
 }:Props) {
+
+    const navigate = useNavigate();
     return (
-        <div className={styles.item}>
+        <div
+            onClick={() => navigate(`/prato/${id}`)} 
+            className={styles.item}
+        >
             <div className={styles.item__image}>
                 <img src={photo} alt="imagem" />
             </div>
