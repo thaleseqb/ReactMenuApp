@@ -5,7 +5,7 @@ import React, { useState } from "react"
 import Filters from "./Filters";
 import Orderer from "./Orderer";
 import Itens from "./Itens";
-import ComponentMenu from "components/ComponentMenu";
+import stylesTheme from "styles/Theme.module.scss";
 
 export default function Menu() {
 
@@ -15,7 +15,7 @@ export default function Menu() {
 
     return (
         <section className={styles.smenu}>
-            <h3 className={styles.smenu__title}>
+            <h3 className={stylesTheme.title}>
                 Cardápio
             </h3>
             <Searcher 
