@@ -1,5 +1,5 @@
+import Tags from "components/Tags";
 import styles from "./Item.module.scss"
-import classNames from "classnames";
 
 interface Props {
     title: string;
@@ -41,23 +41,12 @@ export default function Item({
                         {description}
                     </p>
                 </div>
-                <div className={styles.item__tags}>
-                    <div className={classNames({
-                        [styles.item__types]: true,
-                        [styles[`item__types__${category.label.toLocaleLowerCase()}`]]: true
-                    })}>
-                        {category.label}
-                    </div>
-                    <div className={styles.item__portion}>
-                        {`${size}g`}
-                    </div>
-                    <div className={styles.item__qtdpeople} >
-                        Serve {serving} pessoa{serving === 1 ? "":"s"}
-                    </div>
-                    <div className={styles.item__price}>
-                    R$ {price.toFixed(2)}
-                    </div>
-                </div>
+                <Tags 
+                    size={size}
+                    serving={serving}
+                    price={price}
+                    category={category}
+                />
             </div>
         </div>
     )
