@@ -3,6 +3,7 @@ import styles from "./Begin.module.scss";
 import stylesTheme from "styles/Theme.module.scss";
 import home from "assets/nossa_casa.png"
 import { useNavigate } from "react-router-dom";
+import { Dish } from "types/Dish";
 
 export default function Begin() {
     
@@ -11,7 +12,7 @@ export default function Begin() {
     recomendedDishes = recomendedDishes.sort(() => 0.5 - Math.random()).splice(0,3);
     const navigate = useNavigate();
 
-    function redirectToDetails(dish: typeof menu[0]) {
+    function redirectToDetails(dish: Dish) {
         navigate(`/prato/${dish.id}`, {state:{dish}, replace: true})
     };
 
