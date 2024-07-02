@@ -1,6 +1,7 @@
 import menu from "data/menu.json";
 import styles from "./Begin.module.scss";
 import stylesTheme from "styles/Theme.module.scss";
+import home from "assets/nossa_casa.png"
 
 export default function Begin() {
     
@@ -26,6 +27,13 @@ export default function Begin() {
                         </div>
                     )
                 })}
+            </div>
+            <h3 className={stylesTheme.title}> Nossa casa </h3>
+            <div className={styles.home}>
+                <img src={home} alt="Casa do mineirinho" />
+                <div className={styles.home__address}>
+                    Rua Conceição, 300 <br /> <br /> Vila das Oliveiras - MT
+                </div>
             </div>
         </section>
     );
