@@ -55,7 +55,7 @@ export default function Item({
                         Serve {serving} pessoa{serving === 1 ? "":"s"}
                     </div>
                     <div className={styles.item__price}>
-                    R$ {price}
+                    R$ {price.toFixed(2)}
                     </div>
                 </div>
             </div>

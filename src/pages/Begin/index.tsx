@@ -2,12 +2,18 @@ import menu from "data/menu.json";
 import styles from "./Begin.module.scss";
 import stylesTheme from "styles/Theme.module.scss";
 import home from "assets/nossa_casa.png"
+import { useNavigate } from "react-router-dom";
 
 export default function Begin() {
     
     let recomendedDishes = [...menu];
 
     recomendedDishes = recomendedDishes.sort(() => 0.5 - Math.random()).splice(0,3);
+    const navigate = useNavigate();
+
+    function redirectToDetails(dish: typeof menu[0]) {
+        navigate(`/prato/${dish.id}`, {state:{dish}, replace: true})
+    };
 
     return (
         <section >
@@ -21,7 +27,9 @@ export default function Begin() {
                             <div className={styles.recomended__image}>
                                 <img src={item.photo} alt={item.title} />
                             </div>
-                            <button className={styles.recomended__button}>
+                            <button
+                                onClick={() => redirectToDetails(item)} 
+                                className={styles.recomended__button}>
                                 Ver mais
                             </button>
                         </div>
